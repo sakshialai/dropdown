@@ -1,0 +1,60 @@
+/* static we cannot do changes -->by default all are have static postion */
+/* for absolute default parent is body */
+/* for relative it will occupy its original position  content itself is a access center point*/
+/* for absolute it will not occupy any space  body as a center point*/
+/* sticky is similar to relative if we scroll down it will stick to its position from its original postion to parent element */
+/* fixed and absolute are similar ---> in this parent is body */
+/* sticky and relative are similar --->its own parent */
+/* #img1{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+} */
+/* #img2{
+    position: absolute;
+    top: 99px;
+    left: 64px;
+} */
+/* #img2{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+} */
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(to right ,pink ,rgb(141, 81, 141)); */
+    background-image: linear-gradient(to right bottom, skyblue, plum, rgb(137, 63, 137));
+    height: 100vh;
+}
+nav{
+    background-color: whitesmoke;
+}
+#cont{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    display: block;
+    font-weight: bold;
+}
+a:hover{
+    background-color: pink;
+}
+#menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(153, 206, 206);
+    position: absolute;
+    display: none;
+}
+/* here we are giving the hover effect to the parent of menu which is drop and then targeted the menu */
+#drop:hover #menu{
+    display: block;
+}
